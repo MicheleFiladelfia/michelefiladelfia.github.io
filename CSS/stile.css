@@ -54,11 +54,13 @@ body {
   animation-duration: 1.3s
 }
 
-.frame p {
+.subpres {
   font-size: 1.3em;
   font-family: sans-serif;
   animation: zoomIn;
-  animation-duration: 1s
+  animation-duration: 1s;
+  text-align: center;
+
 }
 
 .nav {
@@ -82,7 +84,7 @@ body {
 }
 
 .button {
-  padding: .9em 2em;
+  padding: 0.9em 2em;
   border: 2px solid transparent;
   position: relative;
   overflow: hidden;
@@ -126,8 +128,7 @@ body {
 }
 
 
-
-.window {
+form {
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
@@ -139,14 +140,13 @@ body {
 
 }
 
-.window h2 {
+form h2 {
   text-align: center;
   animation: lightSpeedInLeft;
   animation-duration: 1.3s;
   font-family: 'Space Mono', serif
 
 }
-
 form input,textarea {
   color: #000;
   margin: auto;
@@ -173,66 +173,97 @@ a {
   font-family: 'Space Mono', serif
 }
 
-@media screen and (max-width:986px) {
-  .pres {
-    font-size: 9em
+.text{
+  font-size: 140%;
+  text-align: justify;
+  font-family: sans-serif
+}
+
+@media screen and (max-width: 986px) {
+  .pres{
+    font-size: 9em;
+  }
+  .text{
+    font-size: 130%
   }
 }
 
-@media screen and (max-width:735px) {
-  .pres {
-    font-size: 7em
+@media screen and (max-width: 735px) {
+  .pres{
+    font-size: 7em;
+  }
+  .text{
+    font-size: 125%
   }
 }
 
-@media screen and (max-width:582px) {
-  .pres {
-    font-size: 5em
+@media screen and (max-width: 582px) {
+  .pres{
+    font-size: 5em;
   }
-  .sub {
-    font-size: 4em
+
+  .sub{
+    font-size: 4em;
+  }
+  .text{
+    font-size: 120%
   }
 }
 
-@media screen and (max-width:505px) {
-  .pres {
-    font-size: 3em
+
+@media screen and (max-width: 505px) {
+  .pres{
+    font-size: 3em;
+  }
+  .text{
+    font-size: 119%
   }
 }
 
-@media screen and (max-width:492px) {
-  form {
-    width: auto
+@media screen and (max-width: 492px) {
+  form{
+    width: auto;
   }
-  .button {
+
+  .button{
     top: 5px;
-    font-size: 13px
+    font-size: 13px;
   }
 }
 
-@media screen and (max-width:492px) {
-  .button {
+
+@media screen and (max-width: 492px) {
+
+  .button{
     top: 8px;
-    font-size: 11px
+    font-size: 11px;
   }
 }
 
-@media screen and (max-width:375px) {
-  form input,textarea {
-    width: 80%
+@media screen and (max-width: 375px) {
+  form input,textarea{
+    width: 80%;
   }
-  .pres {
-    font-size: 3em
+
+  .pres{
+    font-size: 3em;
   }
-  .sub {
-    font-size: 3em
+
+  .sub{
+    font-size: 3em;
+  }
+  .text{
+    font-size: 115%
   }
 }
 
-@media screen and (max-width:307px) {
-  .button {
-    padding: .5em;
-    right: 10px
+@media screen and (max-width: 307px) {
+  .button{
+    padding: 0.5em;
+    right: 10px;
+  }
+  .text{
+    font-size: 100%
   }
 }
 
@@ -250,7 +281,7 @@ a {
   .sub{
     color: white;
   }
-  .window{
+  form{
     color: white;
     border: 2px solid white;
   }
