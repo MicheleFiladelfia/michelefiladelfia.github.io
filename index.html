@@ -24,7 +24,7 @@
   <body>
     <div class="noisy"></div>
     <div class="nav">
-      <a href="#" style="float: left;" onclick="history.go(0);"><img src="img/icon.png"></a>
+      <a href="#" style="float: left;" onclick="history.go(0);"><img id="icon" src="img/icon.png"></a>
       <!--<a class="button" onclick="history.go(0);" style="float: right;" href="#projects">Projects</a>-->
       <a class="button" onclick="history.go(0);"style="float: right;" href="#contacts">Contacts</a>
       <a class="button" onclick="history.go(0);" style="float: right;" href="#about">About</a>
@@ -42,7 +42,7 @@
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br id="about"><br><br><br><br><br><br><br><br><br><br><br><br>
 
       <h3 class="sub"id="about">About</h3>
-      <p style="text-align: justify; font-size: 120%;">Hi, my name is Michele Filadelfia, i'm a 17-year-old Italian software developer with a significant passion for computer science, i began my studies by enrolling in a technical and computer science high school where I learned the basics of Arduino, HTML and CSS, Java basics, networking concepts and other technologies.
+      <p style="text-align: justify; font-size: 140%;">Hi, my name is Michele Filadelfia, i'm a 17-year-old Italian software developer with a significant passion for computer science, i began my studies by enrolling in a technical and computer science high school where I learned Arduino basics, HTML and CSS, Java basics, networking concepts and other technologies.
       <br><br>
       Proceeding with the studies I realized that the school was not giving me enough knowledge in programming, so I decided to study the C programming language from self-taught with a book called "C Programming: A Modern Approach" by Kim N. King to improve my coding thinking.
       <br><br>
@@ -58,9 +58,8 @@
 
 
 
-      
-      <form action="https://formspree.io/f/xjvjqlwg" method="POST">
-
+   
+      <form class="window" action="https://formspree.io/f/xjvjqlwg" method="POST">
         <h2>Send me a message</h2>
         <input type="name" name="name" placeholder="Your name:" required>
         <br>
@@ -70,6 +69,14 @@
         <br>
         <button class="button submit" type="submit">Send</button>
       </form>
+      <!--
+      in a future update...
+      <br>
+      <h6 class="sub" style="font-size: 3em;">Or</h3>
+      <br>
+      <div class="window">
+        <h2>Links</h2>
+      </div>-->
 
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -78,6 +85,10 @@
 
 
     </div>
-
+    <script type="text/javascript">
+      if(window.getComputedStyle( document.body ,null).getPropertyValue('background-color')=="rgb(16, 16, 16)"){
+        document.getElementById("icon").src = "img/icon_dark.png";
+      }
+    </script>
   </body>
 </html>

@@ -1,6 +1,12 @@
-body{
-  margin: 0px;
+@import url(https://fonts.googleapis.com/css?family=Space+Mono);
+
+
+
+body {
+  margin: 0
 }
+
+
 .noisy {
   position: fixed;
   left: 0;
@@ -24,49 +30,47 @@ body{
   opacity: .24
 }
 
-.frame{
+.frame {
   margin-left: 14%;
   margin-right: 14%;
-  color: black;
+  color: #000
 }
 
-.pres{
+.pres {
   font-family: sans-serif;
   text-align: center;
   font-size: 12em;
   margin: 0;
   animation: backInDown;
-  animation-duration: 1.3s;
+  animation-duration: 1.3s
 }
 
-
-.sub{
+.sub {
   font-family: sans-serif;
   text-align: center;
   font-size: 6em;
   margin: 0;
   animation: zoomIn;
-  animation-duration: 1.3s;
+  animation-duration: 1.3s
 }
 
-.frame p{
+.frame p {
   font-size: 1.3em;
   font-family: sans-serif;
   animation: zoomIn;
-  animation-duration: 1s;
+  animation-duration: 1s
 }
 
-
-.nav{
-  border-bottom: 3px solid black;
+.nav {
+  border-bottom: 3px solid #000;
   padding: 20px 20px;
   position: fixed;
   width: 98%;
   top: 0;
-  background-color: white;
+  background-color: #fff;
   text-decoration: none;
-  color: black;
-  z-index: 4;
+  color: #000;
+  z-index: 4
 }
 
 .nav img {
@@ -74,166 +78,214 @@ body{
   height: 50px;
   margin-left: 15px;
   animation: lightSpeedInLeft;
-  animation-duration: 1.3s;
+  animation-duration: 1.3s
 }
 
-
-
-
 .button {
- padding: 0.9em 2em;
- border: 2px solid transparent;
- position: relative;
- overflow: hidden;
- background-color: transparent;
- text-align: center;
- text-transform: uppercase;
- font-size: 16px;
- color: black;
- transition: .3s;
- z-index: 1;
- font-family: inherit;
- color: black;
- border-radius: 10px;
- margin-right: 10px;
- margin-left: 10px;
- text-decoration: none;
- animation: lightSpeedInLeft;
- animation-duration: 1.3s;
+  padding: .9em 2em;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #000;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  animation: lightSpeedInLeft;
+  animation-duration: 1.3s;
+  font-family: 'Space Mono', serif
 }
 
 .button::before {
- content: '';
- width: 0;
- height: 300%;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%) rotate(45deg);
- background: black;
- transition: .5s ease;
- display: block;
- z-index: -1;
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #000;
+  transition: .5s ease;
+  display: block;
+  z-index: -1
 }
 
 .button:hover::before {
- width: 105%;
+  width: 105%
 }
 
 .button:hover {
- color: white;
+  color: #fff
 }
 
 
 
-form{
+.window {
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
   width: 360px;
   height: 400px;
-  border: 2px solid black;
+  border: 2px solid #000;
   border-radius: 15px;
+
+
 }
 
-form h2{
+.window h2 {
   text-align: center;
   animation: lightSpeedInLeft;
   animation-duration: 1.3s;
+  font-family: 'Space Mono', serif
+
 }
 
-
-form input,textarea{
-  color: black;
+form input,textarea {
+  color: #000;
   margin: auto;
   padding: 5px;
   display: flex;
   text-align: center;
   border-radius: 15px;
-  border: 2px solid black;
+  border: 2px solid #000;
   background-color: transparent;
   resize: none;
   width: 60%;
   animation: lightSpeedInLeft;
-  animation-duration: 1.3s;
+  animation-duration: 1.3s
 }
 
-form .submit{
-  border: 2px solid black;
+form .submit {
+  border: 2px solid #000;
   display: flex;
-  margin: auto;
+  margin: auto
 }
-a{
+
+a {
   text-decoration: none;
-}
-@media screen and (max-width: 986px) {
-  .pres{
-    font-size: 9em;
-  }
+  font-family: 'Space Mono', serif
 }
 
-@media screen and (max-width: 735px) {
-  .pres{
-    font-size: 7em;
+@media screen and (max-width:986px) {
+  .pres {
+    font-size: 9em
   }
 }
 
-@media screen and (max-width: 582px) {
-  .pres{
-    font-size: 5em;
-  }
-
-  .sub{
-    font-size: 4em;
+@media screen and (max-width:735px) {
+  .pres {
+    font-size: 7em
   }
 }
 
-
-@media screen and (max-width: 505px) {
-  .pres{
-    font-size: 3em;
+@media screen and (max-width:582px) {
+  .pres {
+    font-size: 5em
+  }
+  .sub {
+    font-size: 4em
   }
 }
 
-@media screen and (max-width: 492px) {
-  form{
-    width: auto;
+@media screen and (max-width:505px) {
+  .pres {
+    font-size: 3em
   }
+}
 
-  .button{
+@media screen and (max-width:492px) {
+  form {
+    width: auto
+  }
+  .button {
     top: 5px;
-    font-size: 13px;
+    font-size: 13px
   }
 }
 
-
-@media screen and (max-width: 492px) {
-
-  .button{
+@media screen and (max-width:492px) {
+  .button {
     top: 8px;
-    font-size: 11px;
+    font-size: 11px
   }
 }
 
-@media screen and (max-width: 375px) {
-
-
-  form input,textarea{
-    width: 80%;
+@media screen and (max-width:375px) {
+  form input,textarea {
+    width: 80%
   }
+  .pres {
+    font-size: 3em
+  }
+  .sub {
+    font-size: 3em
+  }
+}
 
+@media screen and (max-width:307px) {
+  .button {
+    padding: .5em;
+    right: 10px
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .noisy{
+    background-image: url(../img/noise_dark.gif);
+     background-size: 10px 10px;
+  }
+  body{
+    background-color: #101010;
+  }
   .pres{
-    font-size: 3em;
+    color: white;
   }
-
   .sub{
-    font-size: 3em;
+    color: white;
+  }
+  .window{
+    color: white;
+    border: 2px solid white;
+  }
+  form input,textarea{
+    color: white;
+    border: 2px solid white;
+  }
+  form .submit{
+    border: 2px solid white;
+    color: white;
+  }
+  .frame p{
+    color: white;
+  }
+  .nav{
+    border-bottom: 3px solid white;
+    color: white;
+    background-color: #232320;
+  }
+
+
+  .button:hover{
+    color: black;
+  }
+  .button{
+    color: white;
+  }
+  .button::before{
+    background-color: white;
+  }
+
+  a {
+    color: yellow;
   }
 }
 
-@media screen and (max-width: 307px) {
-  .button{
-    padding: 0.5em;
-    right: 10px;
-  }
-}
+
+
