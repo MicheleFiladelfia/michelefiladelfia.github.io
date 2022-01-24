@@ -273,6 +273,7 @@ a{
     
     #navClick{
         padding-right: 30px;
+        height: 30px;
     }
 
     form input,textarea{
