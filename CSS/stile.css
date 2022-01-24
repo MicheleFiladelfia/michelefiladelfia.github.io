@@ -2,12 +2,13 @@
 
 #navClick{
     padding-right: .2em;
-    font-size:43px;
+    font-size:46px;
     cursor:pointer;
     float:right;
     max-width: 50px;
     max-height: 50px;
-    top: 0;
+    animation:lightSpeedInRight;
+    animation-duration:1.3s
 }
 .overlay{
     height:100%;
