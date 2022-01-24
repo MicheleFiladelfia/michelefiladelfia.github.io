@@ -2,11 +2,12 @@
 
 #navClick{
     padding-right: .2em;
-    font-size:50px;
+    font-size:43px;
     cursor:pointer;
     float:right;
-    width:50px;
-    height:50px;
+    max-width: 50px;
+    max-height: 50px;
+    top: 0;
 }
 .overlay{
     height:100%;
@@ -123,8 +124,8 @@ body::-webkit-scrollbar{
     z-index:4
 }
 .nav img{
-    width:50px;
-    height:50px;
+    max-width: 50px;
+    max-height: 50px;
     margin-left:15px;
     animation:lightSpeedInLeft;
     animation-duration:1.3s
@@ -273,7 +274,7 @@ a{
     
     #navClick{
         padding-right: 30px;
-        height: 30px;
+        padding-top: 0;
     }
 
     form input,textarea{
