@@ -29,7 +29,7 @@
 
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-          <br><br><br><br><br><br>1
+          <br><br><br><br><br><br>
           <a href="#about" onclick="nav(); history.go(0);">About</a>
           <a href="#contact" onclick="nav(); history.go(0);">Contact</a>
         </div>
@@ -42,7 +42,7 @@
       <!--<a class="button" onclick="history.go(0);" style="float: right;" href="#projects">Projects</a>
       <a class="button" onclick="history.go(0);"style="float: right;" href="#contacts">Contacts</a>
       <a class="button" onclick="history.go(0);" style="float: right;" href="#about">About</a>-->
-      <span id="navClick" onclick="nav()">&#9776;</span>
+      <a onclick="nav();"><img class="navClick" id="nav" src="img/nav.png"></a>
     </div>
     <br><br><br><br><br><br><br><br><br><br>
 
@@ -98,16 +98,15 @@
     <script type="text/javascript">
       if(window.getComputedStyle( document.body ,null).getPropertyValue('background-color')=="rgb(34, 35, 34)"){
         document.getElementById("icon").src = "img/icon_dark.png";
+        document.getElementById("nav").src ="img/nav_dark.png";
       }
       let isNavOpened = false;
       function nav() {
         if(!isNavOpened){
           document.getElementById("myNav").style.width = "100%";
-          document.getElementById("navClick").innerText ="\u2716";
           isNavOpened = true;
         }else{
           document.getElementById("myNav").style.width = "0%";
-           document.getElementById("navClick").innerText ="\u2630";
           isNavOpened = false;
         }
       }

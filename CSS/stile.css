@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Space+Mono);
 
-#navClick{
+.navClick{
     padding-right: .2em;
     font-size:46px;
     cursor:pointer;
     float:right;
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 47px;
+    max-height: 47px;
     animation:lightSpeedInRight;
     animation-duration:1.3s
 }
@@ -215,7 +215,7 @@ a{
     font-family:sans-serif
 }
 @media screen and (max-width:986px){
-    #navClick{
+    .navClick{
         padding-right: 15px;
     }
     .pres{
@@ -234,7 +234,7 @@ a{
     }
 }
 @media screen and (max-width:582px){
-    #navClick{
+    .navClick{
         padding-right: 40px;
     }
     .pres{
@@ -273,7 +273,7 @@ a{
 @media screen and (max-width:375px){
     
     
-    #navClick{
+    .navClick{
         padding-right: 30px;
         padding-top: 0;
     }
