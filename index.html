@@ -10,10 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Michele Filadelfia">
     <meta name="keywords" content="Programmer,coding, Michele, Filadelfia, Michele Filadelfia">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <!--External Links-->
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="CSS/stile.css?version:2" >
+    <link rel="stylesheet" href="CSS/stile.css?version:3" >
     <link rel="stylesheet" href="CSS/animate.min.css"/>
 
     <!--Page Title-->
@@ -22,13 +23,26 @@
   </head>
 
   <body>
+
+    <!--Menu-->
+    <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <br><br><br><br><br><br>
+          <a href="#about" onclick="nav(); history.go(0);">About</a>
+          <a href="#contact" onclick="nav(); history.go(0);">Contact</a>
+        </div>
+    </div>
+
+
     <div class="noisy"></div>
     <div class="nav">
       <a href="#" style="float: left;" onclick="history.go(0);"><img id="icon" src="img/icon.png"></a>
-      <!--<a class="button" onclick="history.go(0);" style="float: right;" href="#projects">Projects</a>-->
+      <!--<a class="button" onclick="history.go(0);" style="float: right;" href="#projects">Projects</a>
       <a class="button" onclick="history.go(0);"style="float: right;" href="#contacts">Contacts</a>
-      <a class="button" onclick="history.go(0);" style="float: right;" href="#about">About</a>
-
+      <a class="button" onclick="history.go(0);" style="float: right;" href="#about">About</a>-->
+      <span id="navClick" onclick="nav()">&#9776;</span>
     </div>
     <br><br><br><br><br><br><br><br><br><br>
 
@@ -51,7 +65,7 @@
       After that i started learning algorithms and data structures to improve my problem solving and coding skills.
       <br><br>
       You can also find me on <a href="https://github.com/MicheleFiladelfia/">GitHub</a> and <a href="https://linktr.ee/Mic04">Linktree</a>.
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br id="contacts"><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br id="contact"><br><br><br><br><br><br><br>
       <h3 class="sub">Contacts</h3>
 
    
@@ -63,7 +77,7 @@
         <br>
         <textarea name="message" placeholder="Your message:" style="height: 30%;" required></textarea>
         <br>
-        <button class="button submit" type="submit">Send</button>
+        <button class="button submit" style="z-index: 0;" type="submit">Send</button>
       </form>
       <!--
       in a future update...
@@ -84,6 +98,18 @@
     <script type="text/javascript">
       if(window.getComputedStyle( document.body ,null).getPropertyValue('background-color')=="rgb(34, 35, 34)"){
         document.getElementById("icon").src = "img/icon_dark.png";
+      }
+      let isNavOpened = false;
+      function nav() {
+        if(!isNavOpened){
+          document.getElementById("myNav").style.width = "100%";
+          document.getElementById("navClick").innerText ="\u2716";
+          isNavOpened = true;
+        }else{
+          document.getElementById("myNav").style.width = "0%";
+           document.getElementById("navClick").innerText ="\u2630";
+          isNavOpened = false;
+        }
       }
     </script>
   </body>
