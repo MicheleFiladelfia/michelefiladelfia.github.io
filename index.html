@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="it-IT">
-
-
-
-
   <head>
     <!--Metadata Content-->
     <meta charset="utf-8">
@@ -14,7 +10,7 @@
 
     <!--External Links-->
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="CSS/stile.css?version:5" >
+    <link rel="stylesheet" href="CSS/style.css" >
     <link rel="stylesheet" href="CSS/animate.min.css"/>
 
     <!--Page Title-->
@@ -26,23 +22,18 @@
 
     <!--Menu-->
     <div id="myNav" class="overlay">
-
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
           <br><br><br><br><br><br>
-          <a href="#about" onclick="nav(); history.go(0);">About</a>
-          <a href="#contact" onclick="nav(); history.go(0);">Contact</a>
+          <a href="#about" onclick="nav();">About</a>
+          <a href="#contact" onclick="nav();">Contact</a>
         </div>
     </div>
 
 
     <div class="noisy"></div>
     <div class="nav">
-      <a href="#" style="float: left;" onclick="history.go(0);"><img id="icon" src="img/icon.png"></a>
-      <!--<a class="button" onclick="history.go(0);" style="float: right;" href="#projects">Projects</a>
-      <a class="button" onclick="history.go(0);"style="float: right;" href="#contacts">Contacts</a>
-      <a class="button" onclick="history.go(0);" style="float: right;" href="#about">About</a>-->
-      <a onclick="nav();"><img class="navClick" id="nav" src="img/nav.png"></a>
+      <a href="#" style="float: left;" onclick="history.go(0);"><img id="icon" class="animationLeft" src="img/icon.png"></a>
+      <a onclick="nav();"><img class="navClick animationRight" id="nav" src="img/nav.png"></a>
     </div>
     <br><br><br><br><br><br><br><br><br><br>
 
@@ -79,14 +70,7 @@
         <br>
         <button class="button submit" style="z-index: 0;" type="submit">Send</button>
       </form>
-      <!--
-      in a future update...
-      <br>
-      <h6 class="sub" style="font-size: 3em;">Or</h3>
-      <br>
-      <div class="window">
-        <h2>Links</h2>
-      </div>-->
+
 
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -95,36 +79,8 @@
 
 
     </div>
-    <script type="text/javascript">
-      let xType = 'img/x.png';
-      let navType = 'img/nav.png';
 
-      if(window.getComputedStyle( document.body ,null).getPropertyValue('background-color')=="rgb(34, 35, 34)"){
-        document.getElementById("icon").src = "img/icon_dark.png";
-        document.getElementById("nav").src ="img/nav_dark.png";
-        navType = 'img/nav_dark.png';
-        xType = 'img/x_dark.png';
-      }
-
-      let isNavOpened = false;
-      function nav() {
-        if(!isNavOpened){
-          document.getElementById("myNav").style.width = "100%";
-          document.getElementById("nav").src = xType;
-          let style = document.createElement("style");
-          style.innerHTML = `body::-webkit-scrollbar {display: none;}`
-          document.head.appendChild(style);
-          isNavOpened = true;
-
-        }else{
-          document.getElementById("myNav").style.width = "0%";
-          document.getElementById("nav").src = navType;
-          let style = document.createElement("style");
-          style.innerHTML = `body::-webkit-scrollbar {display: inline;}`;
-          document.head.appendChild(style);
-          isNavOpened = false;
-        }
-      }
-    </script>
+    
+    <script src="JS/index.js"></script>
   </body>
 </html>

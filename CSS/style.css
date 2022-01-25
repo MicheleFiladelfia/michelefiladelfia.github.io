@@ -1,0 +1,403 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono);
+.animationRight {
+    animation: lightSpeedInRight;
+    animation-duration: 1.3s
+}
+
+.animationLeft {
+    animation: lightSpeedInLeft;
+    animation-duration: 1.3s
+}
+
+.navClick {
+    padding-right: .2em;
+    font-size: 46px;
+    cursor: pointer;
+    float: right;
+    max-width: 47px;
+    max-height: 47px;
+    -moz-transition: transform 1s;
+    -webkit-transition: transform 1s;
+    transition: transform 1s
+}
+
+.navClick:hover {
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg)
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: .6s
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: .3s
+}
+
+.overlay a:focus,
+.overlay a:hover {
+    color: #f1f1f1
+}
+
+@media screen and (max-height:450px) {
+    .overlay a {
+        font-size: 20px
+    }
+}
+
+body {
+    margin: 0
+}
+
+body::-webkit-scrollbar {
+    width: 1em
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #fff
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    outline: 2px solid #000
+}
+
+.noisy {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url(../img/noise.gif);
+    background-size: 100px 100px;
+    opacity: .24
+}
+
+.frame {
+    margin-left: 14%;
+    margin-right: 14%;
+    color: #000
+}
+
+.pres {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 12em;
+    margin: 0;
+    animation: backInDown;
+    animation-duration: 1.3s
+}
+
+.sub {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 6em;
+    margin: 0;
+    animation: zoomIn;
+    animation-duration: 1.3s
+}
+
+.subpres {
+    font-size: 1.3em;
+    font-family: sans-serif;
+    animation: zoomIn;
+    animation-duration: 1s;
+    text-align: center
+}
+
+.nav {
+    border-bottom: 3px solid #000;
+    padding: 20px 20px;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    z-index: 4
+}
+
+.nav img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 15px;
+    animation-duration: 1.3s
+}
+
+.button {
+    padding: .9em 2em;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #000;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    animation: lightSpeedInLeft;
+    animation-duration: 1.3s;
+    font-family: 'Space Mono', serif
+}
+
+.button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #000;
+    transition: .5s ease;
+    display: block;
+    z-index: -1
+}
+
+.button:hover::before {
+    width: 105%
+}
+
+.button:hover {
+    color: #fff
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    width: 360px;
+    height: 400px;
+    border: 2px solid #000;
+    border-radius: 15px
+}
+
+form h2 {
+    text-align: center;
+    animation: lightSpeedInLeft;
+    animation-duration: 1.3s;
+    font-family: 'Space Mono', serif
+}
+
+form input,
+textarea {
+    color: #000;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid #000;
+    background-color: transparent;
+    resize: none;
+    width: 60%;
+    animation: lightSpeedInLeft;
+    animation-duration: 1.3s
+}
+
+form .submit {
+    border: 2px solid #000;
+    display: flex;
+    margin: auto
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Space Mono', serif
+}
+
+.text {
+    font-size: 140%;
+    text-align: justify;
+    font-family: sans-serif
+}
+
+@media screen and (max-width:986px) {
+    .navClick {
+        padding-right: 15px
+    }
+    .pres {
+        font-size: 9em
+    }
+    .text {
+        font-size: 130%
+    }
+}
+
+@media screen and (max-width:735px) {
+    .pres {
+        font-size: 7em
+    }
+    .text {
+        font-size: 125%
+    }
+}
+
+@media screen and (max-width:582px) {
+    .navClick {
+        padding-right: 40px
+    }
+    .pres {
+        font-size: 5em
+    }
+    .sub {
+        font-size: 4em
+    }
+    .text {
+        font-size: 120%
+    }
+}
+
+@media screen and (max-width:505px) {
+    .pres {
+        font-size: 3em
+    }
+    .text {
+        font-size: 119%
+    }
+}
+
+@media screen and (max-width:492px) {
+    form {
+        width: auto
+    }
+    .button {
+        top: 5px;
+        font-size: 13px
+    }
+}
+
+@media screen and (max-width:492px) {
+    .button {
+        top: 8px;
+        font-size: 11px
+    }
+}
+
+@media screen and (max-width:375px) {
+    .navClick {
+        padding-right: 30px;
+        padding-top: 0
+    }
+    form input,
+    textarea {
+        width: 80%
+    }
+    .pres {
+        font-size: 3em
+    }
+    .sub {
+        font-size: 3em
+    }
+    .text {
+        font-size: 115%
+    }
+}
+
+@media screen and (max-width:307px) {
+    form {
+        height: 450px
+    }
+    .text {
+        font-size: 100%
+    }
+}
+
+@media (prefers-color-scheme:dark) {
+    body::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(34, 35, 34)
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: rgba(34, 35, 34);
+        outline: 2px solid #fff
+    }
+    .noisy {
+        visibility: hidden
+    }
+    body {
+        background-color: #222322
+    }
+    .pres {
+        color: #fff
+    }
+    .sub {
+        color: #fff
+    }
+    form {
+        color: #fff;
+        border: 2px solid #fff
+    }
+    form input,
+    textarea {
+        color: #fff;
+        border: 2px solid #fff
+    }
+    form .submit {
+        border: 2px solid #fff;
+        color: #fff
+    }
+    .frame p {
+        color: #fff
+    }
+    .nav {
+        border-bottom: 3px solid #fff;
+        color: #fff;
+        background-color: #232320
+    }
+    .button:hover {
+        color: #000
+    }
+    .button {
+        color: #fff
+    }
+    .button::before {
+        background-color: #fff
+    }
+    a {
+        color: #ff0
+    }
+    .overlay {
+        background-color: rgba(34, 35, 34, 1)
+    }
+}
