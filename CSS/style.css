@@ -254,7 +254,7 @@ a {
 }
 
 @media screen and (max-width:986px) {
-    .navClick {
+    .menuClick {
         padding-right: 15px
     }
     .pres {
@@ -275,7 +275,7 @@ a {
 }
 
 @media screen and (max-width:582px) {
-    .navClick {
+    .menuClick {
         padding-right: 40px
     }
     .menuClick:hover {
@@ -322,7 +322,7 @@ a {
 }
 
 @media screen and (max-width:375px) {
-    .navClick {
+    .menuClick {
         padding-right: 30px;
         padding-top: 0
     }
