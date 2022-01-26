@@ -9,7 +9,7 @@
     animation-duration: 1.3s
 }
 
-.navClick {
+.menuClick {
     padding-right: .2em;
     font-size: 46px;
     cursor: pointer;
@@ -21,7 +21,7 @@
     transition: transform 1s
 }
 
-.navClick:hover {
+.menuClick:hover {
     transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg)

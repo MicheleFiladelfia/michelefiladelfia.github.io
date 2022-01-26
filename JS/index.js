@@ -1,28 +1,34 @@
 let xType = 'img/x.png';
-let navType = 'img/nav.png';
+let menuType = 'img/menu.png';
+let isMenuOpened = false;
 
 if(window.getComputedStyle( document.body ,null).getPropertyValue('background-color')=="rgb(34, 35, 34)"){
   document.getElementById("icon").src = "img/icon_dark.png";
-  document.getElementById("nav").src ="img/nav_dark.png";
-  navType = 'img/nav_dark.png';
+  document.getElementById("menu").src ="img/menu_dark.png";
+  menuType = 'img/menu_dark.png';
   xType = 'img/x_dark.png';
 }
 
-let isNavOpened = false;
-function nav() {
-  if(!isNavOpened){
-    document.getElementById("myNav").style.width = "100%";
-    document.getElementById("nav").src = xType;
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent)) {
+       document.getElementsByTagName('img')[0].menuClick += ' touch';
+}else{
+       document.getElementsByTagName('img')[0].menuClick += ' no-touch';
+}
+
+function menu() {
+  if(!isMenuOpened){
+    document.getElementById("myMenu").style.width = "100%";
+    document.getElementById("menu").src = xType;
     let style = document.createElement("style");
     style.innerHTML = `body::-webkit-scrollbar {display: none;}`
     document.head.appendChild(style);
-    isNavOpened = true;
+    isMenuOpened = true;
   }else{
-    document.getElementById("myNav").style.width = "0%";
-    document.getElementById("nav").src = navType;
+    document.getElementById("myMenu").style.width = "0%";
+    document.getElementById("menu").src = menuType;
     let style = document.createElement("style");
     style.innerHTML = `body::-webkit-scrollbar {display: inline;}`;
     document.head.appendChild(style);
-    isNavOpened = false;
+    isMenuOpened = false;
     }
 }
