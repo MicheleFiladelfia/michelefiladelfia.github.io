@@ -9,11 +9,6 @@ if(window.getComputedStyle( document.body ,null).getPropertyValue('background-co
   xType = 'img/x_dark.png';
 }
 
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent)) {
-       document.getElementsByTagName('img')[0].menuClick += ' touch';
-}else{
-       document.getElementsByTagName('img')[0].menuClick += ' no-touch';
-}
 
 function menu() {
   if(!isMenuOpened){

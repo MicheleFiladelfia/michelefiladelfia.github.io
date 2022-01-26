@@ -278,6 +278,11 @@ a {
     .navClick {
         padding-right: 40px
     }
+    .menuClick:hover {
+        transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg)
+    }
     .pres {
         font-size: 5em
     }
@@ -287,6 +292,7 @@ a {
     .text {
         font-size: 120%
     }
+
 }
 
 @media screen and (max-width:505px) {
