@@ -352,10 +352,10 @@ a {
 
 @media (prefers-color-scheme:dark) {
     body::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(34, 35, 34)
+        box-shadow: inset 0 0 6px rgb(34, 35, 34)
     }
     body::-webkit-scrollbar-thumb {
-        background-color: rgba(34, 35, 34);
+        background-color: rgb(34, 35, 34);
         outline: 2px solid #fff
     }
     .noisy {
@@ -404,6 +404,42 @@ a {
         color: #ff0
     }
     .overlay {
-        background-color: rgba(34, 35, 34, 1)
+        background-color: rgb(34,35,34)
     }
+}
+
+
+@media (prefers-reduced-motion) {
+  form input,textarea{
+    animation: none
+  }
+  form h2{
+    animation: none
+  }
+  .button{
+    animation: none
+  }
+  .subpres{
+    animation: none
+  }
+  .sub{
+    animation: none
+  }
+  .pres{
+    animation: none
+  }
+  .animationLeft{
+    animation: none
+  }
+  .animationRight{
+    animation: none
+  }
+  .menuClick:hover {
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg)
+  }
+  .overlay{
+    transition: 0s
+  }
 }
