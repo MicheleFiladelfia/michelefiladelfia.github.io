@@ -4,6 +4,9 @@
     animation-duration: 1.3s
 }
 
+.space{
+    height: 10em;
+}
 .animationLeft {
     animation: lightSpeedInLeft;
     animation-duration: 1.3s
