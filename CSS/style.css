@@ -251,6 +251,7 @@ a {
 }
 
 .text {
+    display: inline;
     font-size: 140%;
     text-align: justify;
     font-family: sans-serif

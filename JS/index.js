@@ -10,6 +10,8 @@ if(window.getComputedStyle( document.body ,null).getPropertyValue('background-co
 }
 
 
+document.getElementById("age").innerText = String(Math.abs(Math.ceil(Math.floor(((new Date(2004, 09, 27, 12, 0, 0)) - (new Date())) / (1000 * 60 * 60 * 24)) / 365)));
+
 function menu() {
   if(!isMenuOpened){
     document.getElementById("myMenu").style.width = "100%";
