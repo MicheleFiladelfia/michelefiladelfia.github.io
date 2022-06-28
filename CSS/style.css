@@ -43,7 +43,7 @@
     transition: .6s
 }
 
-.overlay-content {
+.overlayContent {
     position: relative;
     top: 25%;
     width: 100%;
