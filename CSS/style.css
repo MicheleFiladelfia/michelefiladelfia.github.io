@@ -45,10 +45,10 @@
 
 .overlayContent {
     position: relative;
-    top: 25%;
+    top: 33%;
     width: 100%;
     text-align: center;
-    margin-top: 30px
+    margin: auto;
 }
 
 .overlay a {
@@ -114,14 +114,20 @@ body::-webkit-scrollbar-thumb {
 .frame {
     margin-left: 14%;
     margin-right: 14%;
-    color: #000
+}
+
+.frame p{
+    font-family: sans-serif; 
+    text-align: center;
+    animation: lightSpeedInRight;
+    animation-duration: 1.3s;
 }
 
 .pres {
+    margin: 0;
     font-family: sans-serif;
     text-align: center;
     font-size: 12em;
-    margin: 0;
     animation: backInDown;
     animation-duration: 1.3s
 }
@@ -254,22 +260,24 @@ a {
     display: inline;
     font-size: 140%;
     text-align: justify;
-    font-family: sans-serif
+    font-family: sans-serif;
 }
+
 
 @media screen and (max-width:986px) {
     .menuClick {
         padding-right: 15px
     }
     .pres {
-        font-size: 9em
+        font-size: 8em
     }
     .text {
         font-size: 130%
     }
+
 }
 
-@media screen and (max-width:735px) {
+@media screen and (max-width:830px) {
     .pres {
         font-size: 7em
     }
@@ -303,8 +311,16 @@ a {
     .pres {
         font-size: 3em
     }
+
+    .sub {
+        font-size: 3em
+    }
+
     .text {
         font-size: 119%
+    }
+    .space{
+        height: 12em;
     }
 }
 
@@ -315,6 +331,11 @@ a {
     .button {
         top: 5px;
         font-size: 13px
+    }
+
+    .frame{
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 
@@ -343,6 +364,7 @@ a {
     .text {
         font-size: 115%
     }
+
 }
 
 @media screen and (max-width:307px) {
@@ -353,6 +375,45 @@ a {
         font-size: 100%
     }
 }
+
+@media screen and (max-height:700px) {
+    .space{
+        height: 5em;
+    }
+}
+
+
+@media screen and (max-height:1600px) and (max-width:1000px){
+    .space{
+        height: 24em;
+    }
+}
+
+@media screen and (max-height:1200px) and (max-width:1000px){
+    .space{
+        height: 19em;
+    }
+}
+
+@media screen and (max-height:800px) and (max-width:600px){
+    .space{
+        height: 12em;
+    }
+}
+
+@media screen and (max-height:1000px) and (max-width:500px){
+    .space{
+        height: 19em;
+    }
+}
+
+
+@media screen and (max-height:800px) and (max-width:500px){
+    .space{
+        height: 15em;
+    }
+}
+
 
 @media (prefers-color-scheme:dark) {
     body::-webkit-scrollbar-track {

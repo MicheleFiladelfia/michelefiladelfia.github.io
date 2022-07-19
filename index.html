@@ -10,9 +10,15 @@
     <meta name="google-site-verification" content="yYyzqR6vNxfPqDef1zQMb5jVZ-DWUU6pRm5KAVV6G6E" />
 
     <!--External Links-->
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="CSS/style.css?v=2.1" >
-    <link rel="stylesheet" href="CSS/animate.min.css"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="CSS/style.css?v=3" >
+    <link rel="stylesheet" href="CSS/animate.min.css">
+
+    <!--External Scripts-->
+    <script src="JS/setColorScheme.js" defer></script>
+    <script src="JS/menu.js" async></script>
 
     <!--Page Title-->
     <title>Michele Filadelfia</title>
@@ -24,26 +30,31 @@
     <!--Menu-->
     <div id="myMenu" class="overlay">
         <div class="overlayContent">
-          <div class="space"><br></div>
-          <a href="#about" onclick="menu();">About</a>
-          <a href="#contacts" onclick="menu();">Contacts</a>
-          <a href="https://github.com/MicheleFiladelfia/" onclick="menu();">Github</a>
+          <a href="#about" onclick="openCloseMenu();">About</a>
+          <a href="#contacts" onclick="openCloseMenu();">Contacts</a>
+          <a href="blog" onclick="openCloseMenu();">Blog</a>
+          <a href="https://github.com/MicheleFiladelfia/" onclick="openCloseMenu();">Github</a>
         </div>
     </div>
 
     <!--Background-->
     <div class="noisy"></div>
 
+
     <!--Menu Icon and Website Icon-->
     <div class="nav">
       <a href="#" style="float: left;" onclick="history.go(0);"><img id="icon" class="animationLeft" src="img/icon.png" alt="M icon"></a>
-      <a href="javascript:void(0)" onclick="menu();"><img class="menuClick animationRight" id="menu" src="img/menu.png" alt="menu-icon"></a>
+      <a href="javascript:void(0)" onclick="openCloseMenu();"><img class="menuClick animationRight" id="menu" src="img/menu.png" alt="menu-icon"></a>
     </div>
 
     <div class="space"><br></div>
 
+    
+    <!--Frame that limits the margin of the content-->
     <div class="frame">
       <br><br><br>
+
+
 
       <!--Presentation-->
       <h1 class="pres">Hi! I'm<br>Michele</h1> <br>
@@ -51,6 +62,9 @@
 
 
       <div class="space"><br></div>
+
+
+
 
       <!--About-->
       <br id="about">
@@ -70,6 +84,9 @@
       <br><br>
 
       <div class="space"><br></div>
+
+
+
 
       <!--Contacts-->
       <br id="contacts">
@@ -92,26 +109,12 @@
 
 
       <div class="space"><br></div>
-
-      <!--
-
-      <br id="projects">      
-        
-      <div class="space"><br></div>
-
-      <h3 class="sub">Projects</h2>
-
-      Things
-
-      <div class="space"><br></div>
-
-      
-      -->
-
-
     </div>
 
-    
-    <script src="JS/index.js"></script>
+
+    <!--Internal Script-->
+    <script>
+      document.getElementById("age").innerText = String(Math.abs(Math.ceil(Math.floor(((new Date(2004, 09, 27, 12, 0, 0)) - (new Date())) / (1000 * 60 * 60 * 24)) / 365)));
+    </script>
   </body>
 </html>

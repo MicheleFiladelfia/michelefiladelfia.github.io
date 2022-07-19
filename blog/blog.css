@@ -1,0 +1,116 @@
+.post {
+    width: 100%; 
+    height: 6em;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 19px;
+    border: 3px solid white;
+    display:table;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    margin: auto;
+    animation: lightSpeedInRight;
+    animation-duration: 1.3s;
+}
+
+.post img{
+    border-radius: 15px;
+    float: left;
+    width: 9em;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img{
+    border-radius: 15px;
+}
+
+.post p{
+    font-size: medium;
+}
+
+.post .sign{
+    font-style: italic;
+    font-size: small;
+    text-align: right;
+    padding-right: 2%;
+}
+
+.title{
+    text-align:center;
+    font-family: sans-serif;
+    animation: backInDown;
+    animation-duration: 1.3s;
+    margin: 0;
+    font-size: 4em;
+    color: white;
+}
+
+.subtitle{
+    font-family: sans-serif;
+    animation: backInDown;
+    animation-duration: 1.3s;
+    font-size: 2em;
+    font-weight: bold;
+    color:white;
+}
+
+
+
+
+@media screen and (max-width:1653px) {
+    .post img{
+        width: 11em;
+    }
+}
+
+
+@media screen and (max-width:1429px) {
+    .post{
+        font-size: x-large;
+    }
+    .post p{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:1131px) {
+    .post img{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:897px) {
+    .title{
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .title{
+        font-size: 2em;
+    }
+}
+
+@media (prefers-color-scheme:light) {
+    .title{
+        color: black;
+    }
+
+    .post{
+        color: black;
+        border: 2px solid black;
+    }
+
+    .subtitle{
+        color: black;
+    }
+}
