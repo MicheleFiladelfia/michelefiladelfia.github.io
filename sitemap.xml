@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://michelefiladelfia.github.io/</loc>
 <lastmod>2022-07-19T21:03:55+00:00</lastmod>
@@ -11,9 +11,7 @@
 <priority>0.80</priority>
 </url>
 <url>
-<loc>
-https://michelefiladelfia.github.io/blog/content/time-anxiety-management.html
-</loc>
+<loc>https://michelefiladelfia.github.io/blog/content/time-anxiety-management.html</loc>
 <lastmod>2022-07-19T21:03:55+00:00</lastmod>
 <priority>0.64</priority>
 </url>
